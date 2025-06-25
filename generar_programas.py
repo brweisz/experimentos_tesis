@@ -60,10 +60,10 @@ def input_for_xor(k,_):
 b = {random_input_b}'''
 
 def generar_programas():
-    generar_n("assert_zero", n_values, input_for_assert_zero)
-    generar_n("memory", n_values, input_for_memory)
-    generar_n_k("range", n_values, input_for_range)
-    generar_n_k("xor", n_values, input_for_xor)
+    generar_n("assert_zero", sizes_per_program_family["assert_zero"], input_for_assert_zero)
+    generar_n("memory", sizes_per_program_family["memory"], input_for_memory)
+    generar_n_k("range", sizes_per_program_family["range"], input_for_range)
+    generar_n_k("xor", sizes_per_program_family["xor"], input_for_xor)
 
 if __name__ == "__main__":
     generar_programas()
