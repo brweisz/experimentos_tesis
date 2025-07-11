@@ -1,0 +1,6 @@
+{
+    "name": "tesis",
+    "image": "jupyter/datascience-notebook", // or any image you prefer
+    "remoteUser": "root", // The user in the remote system
+    "runArgs": [ ]
+}
