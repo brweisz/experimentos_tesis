@@ -13,14 +13,14 @@ n_values = [1, 10, 100]
 # }
 
 sizes_per_program_family = {
-    "assert_zero": [1, 10],
-    "memory": [1, 10],
-    "range/u8": [1, 10],
-    "range/u16": [1, 10],
-    "range/u32": [1, 10],
-    "xor/u8": [1, 10],
-    "xor/u16": [1, 10],
-    "xor/u32": [1, 10],
+    "assert_zero": [100, 1000, 10000, 100000, 1000000],
+    "memory": [10, 100, 1000],
+    "range/u8": [100, 1000, 10000, 100000],
+    "range/u16": [100, 1000, 10000, 100000],
+    "range/u32": [100, 1000, 10000, 100000],
+    "xor/u8": [100, 1000, 10000],
+    "xor/u16": [100, 1000, 10000],
+    "xor/u32": [100, 1000, 10000],
 }
 
 basic_implementations = ["noirky2-bits", "noirky2-bits-nozk", "bb"]

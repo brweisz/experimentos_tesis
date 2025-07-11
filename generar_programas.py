@@ -62,8 +62,12 @@ b = {random_input_b}'''
 def generar_programas():
     generar_n("assert_zero", sizes_per_program_family["assert_zero"], input_for_assert_zero)
     generar_n("memory", sizes_per_program_family["memory"], input_for_memory)
-    generar_n_k("range", sizes_per_program_family["range"], input_for_range)
-    generar_n_k("xor", sizes_per_program_family["xor"], input_for_xor)
+    generar_n_k("range", sizes_per_program_family["range/u8"], input_for_range)
+    generar_n_k("range", sizes_per_program_family["range/u16"], input_for_range)
+    generar_n_k("range", sizes_per_program_family["range/u32"], input_for_range)
+    generar_n_k("xor", sizes_per_program_family["xor/u8"], input_for_xor)
+    generar_n_k("xor", sizes_per_program_family["xor/u16"], input_for_xor)
+    generar_n_k("xor", sizes_per_program_family["xor/u32"], input_for_xor)
 
 if __name__ == "__main__":
     generar_programas()
