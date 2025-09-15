@@ -12,7 +12,10 @@ def clear_directory(path):
 
 def borrar_programas():
     for path in program_families:
-        clear_directory(f"./programas_generados/{path}")
+        try:
+            clear_directory(f"./programas_generados/{path}")
+        except:
+            pass
 
 if __name__ == "__main__":
     borrar_programas()
