@@ -67,5 +67,6 @@ def generar_programas():
     generar_n_k("xor", sizes_per_program_family["xor/u8"], input_for_xor)
 
 if __name__ == "__main__":
-    generar_programas()
+    #generar_programas()
+    generar_n_k("range", [50000, 100000], input_for_range)
 
