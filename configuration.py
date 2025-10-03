@@ -17,6 +17,8 @@ implementations_with_variations = ["noirky2-bits", "noirky2-bits-nozk", "bb", "n
 
 backends_per_program_family = {
     "assert_zero": basic_implementations,
+
+
     "memory": basic_implementations,
     "memory_wide": basic_implementations,
     "range/u8": implementations_with_variations,
